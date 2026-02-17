@@ -1,0 +1,6 @@
+@BincomProjectApi_HostAddress = http://localhost:5068
+
+GET {{BincomProjectApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

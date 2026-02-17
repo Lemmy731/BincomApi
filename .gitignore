@@ -1,0 +1,29 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+:;
+## Build results
+bin/
+obj/
+
+## Rider / VSCode extras
+.idea/
+.vscode/
+
+## NuGet
+*.nupkg
+packages/
+
+## Logs
+*.log
+
+## OS files
+.DS_Store
+Thumbs.db
+
+# Ignore main config with secrets
+appsettings.json
+appsettings.Development.json
