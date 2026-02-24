@@ -22,11 +22,11 @@ namespace BincomProjectApi.Service.Implementation
         public async Task<ApiResponse<string>> Login(LoginDto loginDto)
         {
             var user = await _loginRepository.Login(loginDto);
-            if(user.StatusCode == StatusCodes.Status200OK)
+            if (user.StatusCode == StatusCodes.Status200OK)
             {
                 var jwtClaims = new JwtClaimsModel
                 {
-                    Id = user.Data.Id,  
+                    Id = user.Data.Id,
                     Email = user.Data.Email,
                     FirstName = user.Data.FirstName,
                     LastName = user.Data.LastName,

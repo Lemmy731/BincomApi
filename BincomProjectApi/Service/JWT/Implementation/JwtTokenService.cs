@@ -23,12 +23,12 @@ namespace BincomProjectApi.Service.JWT.Implementation
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub, claims.Id),
-                    new Claim(ClaimTypes.NameIdentifier, claims.Id),
+                    //new Claim(JwtRegisteredClaimNames.Sub, claims.Id),
+                    //new Claim(ClaimTypes.NameIdentifier, claims.Id),
                     new Claim(JwtRegisteredClaimNames.Email, claims.Email),
                     new Claim(ClaimTypes.Name, claims.Email),
                     new Claim(ClaimTypes.GivenName, claims.FirstName),
-                    new Claim(ClaimTypes.Surname, claims.LastName),
+                    //new Claim(ClaimTypes.Surname, claims.LastName),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64)
                 }),

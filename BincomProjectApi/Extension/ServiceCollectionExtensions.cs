@@ -15,7 +15,7 @@ namespace BincomProjectApi.Extension
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "iVoluntia API",
+                    Title = "Bincom API",
                     Version = "v1"
                 });
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
